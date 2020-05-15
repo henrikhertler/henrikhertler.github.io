@@ -1,22 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+body {
+  background: #16161a url(/img/bg.svg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
 html, body {
-  background: #16161a;
   color: #fffffe;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
+  height: 100%;
 }
 
-body {
-  background: url(/img/bg.svg);
-  background-size: cover;
+.row.content {
+  margin-top: 16rem;
+}
+
+.row.portfolio {
+  margin-top: 10rem;
 }
 
 h1 {
   font-weight: 400;
-}
-
-.cover-container {
-  height: 100vh;
 }
 
 .navbar-dark .navbar-nav .active > .nav-link {
@@ -35,10 +42,6 @@ nav.navbar {
   text-transform: uppercase;
   letter-spacing: .1rem;
   font-size: .9rem;
-}
-
-nav.navbar .navbar-brand {
-  padding: 0 2rem;
 }
 
 nav.navbar a {
@@ -88,12 +91,13 @@ span.dot {
   }
 }
 
-.row.content {
-  padding: 0 15px;
-}
-
 .card {
   background-color: #94a1b2;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #94a1b2;
+  box-shadow: 0px 0px 10px 0px #94a1b2;
 }
 
 .card .card-img-top {
@@ -124,6 +128,7 @@ span.dot {
 .card .card-text a {
   color: #fffffe;
   font-weight: 400;
+  text-decoration: underline;
 }
 
 .card .card-text a:hover {
@@ -131,6 +136,7 @@ span.dot {
 }
 
 footer {
+  width: 100%;
   text-align: center;
 }
 
@@ -138,6 +144,8 @@ footer p {
   font-size: .5rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
+  margin: 2rem 0 0 0;
+  padding: 1rem 0;
 }
 
 @media (max-width: 990px) {
@@ -157,15 +165,32 @@ footer p {
     text-align: center;
     width: 25%;
   }
-  nav.navbar {
-    padding-right: 0;
-  }
   nav.navbar a {
     border: 0;
   }
   .row.content {
     margin: 3rem 0;
-    padding: 0;
+  }
+  .row.content .col-sm:first-child {
+    padding-left: 0;
+  }
+  .row.portfolio {
+    margin-top: 3rem;
+  }
+  .logo {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .row.content .col-sm:first-child {
+    padding-left: 15px;
+  }
+  .row.portfolio {
+    padding: 0 15px;
+  }
+  .navbar-toggler {
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
