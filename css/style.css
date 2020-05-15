@@ -102,6 +102,10 @@ span.dot {
   }
 }
 
+.row.content {
+  padding: 0 15px;
+}
+
 .card {
   background-color: #94a1b2;
 }
@@ -142,6 +146,7 @@ span.dot {
 
 footer {
   text-align: center;
+  position: relative;
 }
 
 footer p {
@@ -206,6 +211,31 @@ footer p {
   }
   100% {
     opacity: 0.15;
+  }
+}
+
+@media (max-width: 990px) {
+  .social-media {
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .social-media li {
+    text-align: center;
+    width: 25%;
+  }
+  nav.navbar {
+    padding-right: 0;
+  }
+  nav.navbar a {
+    border: 0;
+  }
+  .row.content {
+    margin: 3rem 0;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

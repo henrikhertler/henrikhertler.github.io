@@ -72,6 +72,9 @@ span.dot
     box-shadow: 0 0 10px 8px transparent
     border-width: 2px
 
+.row.content
+  padding: 0 15px
+
 .card
     background-color: $mainColor
 
@@ -105,6 +108,7 @@ span.dot
 
 footer
     text-align: center
+    position: relative
 
     p
         font-size: .5rem
@@ -142,3 +146,26 @@ footer
 
   100%
     opacity: 0.15
+
+
+$breakpoint-tablet: 990px
+@media (max-width: $breakpoint-tablet)
+  .social-media
+    flex-direction: inherit
+    font-size: 1.5rem
+    margin-top: 1rem
+
+    li
+      text-align: center
+      width: 25%
+
+  nav.navbar
+    padding-right: 0
+
+    a
+      border: 0
+
+  .row.content
+    margin: 3rem 0
+    padding: 0
+
