@@ -48,7 +48,7 @@ h1 {
 nav.navbar {
   text-transform: uppercase;
   letter-spacing: .1rem;
-  font-size: .7rem;
+  font-size: .9rem;
 }
 
 nav.navbar .navbar-brand {
@@ -118,7 +118,7 @@ span.dot {
 
 .card .card-img-top.you p {
   line-height: 138px;
-  font-size: .7rem;
+  font-size: .9rem;
   color: #94a1b2;
   text-align: center;
   text-transform: uppercase;
@@ -127,7 +127,7 @@ span.dot {
 }
 
 .card .card-text {
-  font-size: .7rem;
+  font-size: .9rem;
   color: #fffffe;
 }
 
