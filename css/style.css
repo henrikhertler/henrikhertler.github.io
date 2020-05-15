@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+html, body {
+  background: #16161a;
+  color: #fffffe;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.background {
+  z-index: 0;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.background .background-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.cover-container {
+  height: 100vh;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-item.active a.nav-link {
+  border-bottom: 1px solid #fffffe;
+}
+
+.nav-item a.nav-link:hover {
+  border-bottom: 1px solid #fffffe;
+}
+
+nav.navbar {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-size: .7rem;
+}
+
+nav.navbar .navbar-brand {
+  padding: 0 2rem;
+}
+
+nav.navbar a {
+  color: #fffffe;
+  padding: .3rem;
+  border: 1px solid #16161a;
+}
+
+nav.navbar a:hover {
+  border: 1px solid #fffffe;
+}
+
+span.dot {
+  -webkit-animation: anim-glow 2s ease infinite;
+          animation: anim-glow 2s ease infinite;
+  margin: 0 .15rem 0 .1rem;
+  border-radius: 50%;
+  border: 2px solid #94a1b2;
+  width: 2px;
+  height: 2px;
+  display: inline-block;
+  vertical-align: 0;
+  background-color: #94a1b2;
+}
+
+@-webkit-keyframes anim-glow {
+  0% {
+    -webkit-box-shadow: 0 0 #94a1b2;
+            box-shadow: 0 0 #94a1b2;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 10px 8px transparent;
+            box-shadow: 0 0 10px 8px transparent;
+    border-width: 2px;
+  }
+}
+
+@keyframes anim-glow {
+  0% {
+    -webkit-box-shadow: 0 0 #94a1b2;
+            box-shadow: 0 0 #94a1b2;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 10px 8px transparent;
+            box-shadow: 0 0 10px 8px transparent;
+    border-width: 2px;
+  }
+}
+
+.card {
+  background-color: #94a1b2;
+}
+
+.card .card-img-top {
+  background: #ffffff;
+}
+
+.card .card-img-top.you {
+  width: 100%;
+  max-height: 138px;
+  display: block;
+}
+
+.card .card-img-top.you p {
+  line-height: 138px;
+  font-size: .7rem;
+  color: #94a1b2;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: .1rem;
+}
+
+.card .card-text {
+  font-size: .7rem;
+  color: #fffffe;
+}
+
+.card .card-text a {
+  color: #fffffe;
+  font-weight: 400;
+}
+
+.card .card-text a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+#home {
+  -webkit-clip-path: url(#cache);
+          clip-path: url(#cache);
+}
+
+#maincolor {
+  fill: none;
+  opacity: 0.15;
+  stroke: #94a1b2;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 800;
+  -webkit-animation: draw 4s;
+          animation: draw 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,144 @@
+$dark: #16161a
+$light: #fffffe
+$mainColor: #94a1b2
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+html, body
+    background: $dark
+    color: $light
+    font-family: 'Ubuntu', sans-serif
+    font-weight: 300
+
+.background
+    z-index: 0
+    display: inline-block
+    position: absolute
+    width: 100%
+    height: 100% 
+    vertical-align: middle 
+    overflow: hidden
+    
+    .background-content
+        display: inline-block
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+h1
+    font-weight: 400
+
+.cover-container
+    height: 100vh
+
+.navbar-dark .navbar-nav .active>.nav-link
+    color: rgba(255,255,255,.5)
+
+.nav-item
+    &.active a.nav-link
+        border-bottom: 1px solid $light
+    a.nav-link:hover
+        border-bottom: 1px solid $light
+
+nav.navbar
+    text-transform: uppercase
+    letter-spacing: .1rem
+    font-size: .7rem
+    .navbar-brand
+        padding: 0 2rem
+    a
+        color: $light
+        padding: .3rem
+        border: 1px solid $dark
+        &:hover
+            border: 1px solid $light
+        
+span.dot
+    animation: anim-glow 2s ease infinite
+    margin: 0 .15rem 0 .1rem
+    border-radius: 50%
+    border: 2px solid $mainColor
+    width: 2px
+    height: 2px
+    display: inline-block
+    vertical-align: 0
+    background-color: $mainColor
+
+@keyframes anim-glow
+  0%
+    box-shadow: 0 0 rgba($mainColor, 1)
+
+  100%
+    box-shadow: 0 0 10px 8px transparent
+    border-width: 2px
+
+.card
+    background-color: $mainColor
+
+    .card-img-top
+        background: #ffffff
+
+        &.you
+            width: 100%
+            max-height: 138px
+            display: block
+            p
+                line-height: 138px
+                font-size: .7rem
+                color: $mainColor
+                text-align: center
+                text-transform: uppercase
+                font-weight: 400
+                letter-spacing: .1rem
+
+    .card-text
+        font-size: .7rem
+        color: $light
+
+        a
+            color: $light
+            font-weight: 400
+            
+            &:hover
+                text-decoration: underline
+            
+
+footer
+    text-align: center
+
+    p
+        font-size: .5rem
+        text-transform: uppercase
+        letter-spacing: .1rem
+
+// background animation
+
+#home
+  clip-path: url(#cache)
+
+#maincolor
+  fill: none
+  opacity: 0.15
+  stroke: $mainColor
+  stroke-width: 2
+  stroke-miterlimit: 10
+  stroke-dasharray: 200
+  stroke-dashoffset: 800
+  animation: draw 4s
+  animation-fill-mode: forwards
+  animation-iteration-count: infinite
+  animation-timing-function: ease-in-out
+
+@keyframes draw
+  to
+    stroke-dashoffset: 0
+
+@keyframes show
+  0%
+    opacity: 0.15
+
+  50%
+    opacity: 0.2
+
+  100%
+    opacity: 0.15
