@@ -106,12 +106,12 @@ span.dot {
 
 .card .card-img-top.you {
   width: 100%;
-  max-height: 138px;
+  max-height: 170px;
   display: block;
 }
 
 .card .card-img-top.you p {
-  line-height: 138px;
+  line-height: 170px;
   font-size: .9rem;
   color: #94a1b2;
   text-align: center;
@@ -179,6 +179,9 @@ footer p {
   }
   .logo {
     padding-left: 15px;
+  }
+  .card .card-img-top.you p {
+    line-height: 85px;
   }
 }
 
